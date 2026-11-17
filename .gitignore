@@ -1,0 +1,14 @@
+# Build y caches
+__pycache__/
+*.pyc
+android/.gradle/
+android/.kotlin/
+android/app/build/
+android/build/
+android/local.properties
+# Herramientas externas (binarios, no versionar)
+scrcpy/
+platform-tools/
+# Datos de ejecucion del dispositivo (tokens, IPs, seriales): nunca subir
+logs/
+memory/

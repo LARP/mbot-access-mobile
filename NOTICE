@@ -1,0 +1,16 @@
+mbot-access-mobile
+Atribuciones de ideas y formatos de proyectos de terceros.
+
+Mika (https://github.com/wangzan101/Mika), licencia Apache-2.0
+  - Se estudió su diseño (dos niveles de permisos, espera por cambio de pantalla, ids de elementos, emparejamiento,
+    conocimiento por app) para la hoja de ruta de este proyecto (ROADMAP.md).
+  - Fase 2: el formato de las fichas de conocimiento (`knowledge/apps/<nombre>/APP.md`: frontmatter con
+    name/display/packages/aliases/open/description + secciones) y la idea de estados Borrador -> Prueba -> Verificada
+    (AppKnowledgeLearning) se adaptan de Mika. El texto de las fichas, el código (Python y Kotlin) y los nombres de las
+    secciones en español son propios; no se ha copiado texto de sus fichas.
+
+Fase 3 (modo avanzado):
+  - Ideas y protocolos de Shizuku (Apache-2.0, https://github.com/RikkaApps/Shizuku): asistente con app_process y entrega del Binder por ContentProvider. Codigo propio.
+  - Protocolo de emparejamiento y conexion de la depuracion inalambrica de adb (AOSP packages/modules/adb, Apache-2.0) y SPAKE2 de BoringSSL (crypto/curve25519/spake25519.cc, licencia ISC/OpenSSL): reimplementados desde cero en Kotlin (android/app/src/main/java/com/mbot/agent/adb) y contrastados con el `adb` real. Las constantes de los puntos M y N son las publicas de BoringSSL.
+  - Dependencias de la app: ninguna anadida. Solo para pruebas JVM (no se empaqueta en el APK): JUnit 4.13.2 (EPL-1.0), `testImplementation`. Herramientas de desarrollo opcionales en tools/ (pyopenssl, cryptography: Apache-2.0/BSD).
+

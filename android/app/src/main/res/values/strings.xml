@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">mbot-access-mobile</string>
+    <string name="a11y_description">Permite que un agente de IA de tu red local lea lo que hay en la pantalla y la maneje (tocar, deslizar, escribir, abrir apps) mediante comandos enviados desde tu PC por Wi-Fi. Solo acepta conexiones de redes privadas con el código secreto que muestra la app. Actívalo únicamente si confías en el equipo que lo controla.</string>
+</resources>
